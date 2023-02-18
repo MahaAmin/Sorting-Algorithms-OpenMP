@@ -1,0 +1,14 @@
+Serial: 
+- count sort: 
+"gcc serial_sorting/serial_count_sort.c helpers/helpers.c"
+
+- selection sort: 
+"gcc serial_sorting/serial_selection_sort.c helpers/helpers.c"
+
+=====================================================================
+Parallel:
+- count sort: 
+"gcc -fopenmp parallel_sorting/omp_count_sort.c helpers/helpers.c"
+
+- selection sort: 
+"gcc -fopenmp parallel_sorting/omp_selection_sort.c helpers/helpers.c"

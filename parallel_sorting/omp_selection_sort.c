@@ -1,9 +1,13 @@
 #include<stdio.h>
+#include<time.h>
 #include<omp.h>
 #include "../helpers/helpers.h"
 
 
-int SIZE = 100000;
+int SIZE = 1000;
+clock_t t;
+double cpu_time_used; 
+
 struct Compare
 {
     int val;
@@ -17,9 +21,16 @@ void omp_selection_sort(int arr[], int size);
 int main(){
     int arr[SIZE];
     generate_rand_arr(arr, SIZE, SIZE);
-    //print_arr(arr, SIZE);
+    print_arr(arr, SIZE);
+
+    // mesaure consumed time
+    t = clock();
     omp_selection_sort(arr, SIZE);
-    //print_arr(arr, SIZE);
+    t = clock() - t;
+
+    print_arr(arr, SIZE);
+    cpu_time_used = ((double)t)/CLOCKS_PER_SEC;
+    printf("Parallel selection sort time = %f seconds.\n", cpu_time_used);
 }
 
 

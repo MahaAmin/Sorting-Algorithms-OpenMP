@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <omp.h>
+#include<time.h>
 #include "../helpers/helpers.h"
 
 # define NUM_THREADS 5
 int SIZE = 10;
+clock_t t;
+double cpu_time_used; 
 
 void omp_count_sort(int unsorted_arr[], int sorted_arr[], int size);
 
@@ -20,8 +23,14 @@ int main(){
         sorted_arr[i] = 0;
 
     // parallel count sort
+    // mesaure consumed time
+    t = clock();
     omp_count_sort(unsorted_arr, sorted_arr, SIZE);
-    print_arr(sorted_arr, SIZE);
+    t = clock() - t;
+
+    print_arr(sorted_arr, SIZE);cpu_time_used = ((double)t)/CLOCKS_PER_SEC;
+    printf("Parallel count sort time = %f seconds.\n", cpu_time_used);
+
 }
 
 
