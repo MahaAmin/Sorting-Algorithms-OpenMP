@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
 #include "../helpers/helpers.h"
 
 int SIZE = 100;
@@ -8,9 +6,6 @@ int SIZE = 100;
 void count_sort(int arr[], int size);
 
 int main(){
-    // initialize random seed to generate unique values each run.
-    srand(time(NULL));
-
     // generate random array with length and max value of SIZE
     int arr[SIZE];
     generate_rand_arr(arr, SIZE, SIZE);
@@ -18,8 +13,10 @@ int main(){
     // view the unsorted array
     print_arr(arr, SIZE);
 
-    // sort and view sorted array
+    // sort array 
     count_sort(arr, SIZE);
+    
+    // view sorted array
     print_arr(arr, SIZE);
 }
 

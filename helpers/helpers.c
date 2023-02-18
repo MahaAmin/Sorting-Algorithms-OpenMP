@@ -1,7 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<time.h>
 
 void generate_rand_arr(int arr[], int size, int max){
+    // initialize random seed to generate unique values each run.
+    srand(time(NULL));
     for(int i=0; i<size; i++)
         arr[i] = rand()%max;
 }
