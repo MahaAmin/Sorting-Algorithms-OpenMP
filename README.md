@@ -12,7 +12,6 @@ This project implements sorting algorithms into 2 modes: normal serial mode, and
 |Merge Sort|
 |Quick Sort|
 |Selection Sort|
-||
 
 ---
 
@@ -37,7 +36,7 @@ $ ./<serial_ALGO_sort>.out
 1- Compile parallel algorithm:
 
 ```
-gcc -fopenmp parallel_sorting/<omp_ALGO_sort>.c helpers/helpers.c -o <omp_ALGO_sort>.out
+$ gcc -fopenmp parallel_sorting/<omp_ALGO_sort>.c helpers/helpers.c -o <omp_ALGO_sort>.out
 ```
 
 2- Run parallel algorithm:
