@@ -5,6 +5,9 @@ Serial:
 - selection sort: 
 "gcc serial_sorting/serial_selection_sort.c helpers/helpers.c"
 
+- Quick sort:
+"gcc serial_sorting/serial_quick_sort.c helpers/helpers.c"
+
 =====================================================================
 Parallel:
 - count sort: 
@@ -12,3 +15,6 @@ Parallel:
 
 - selection sort: 
 "gcc -fopenmp parallel_sorting/omp_selection_sort.c helpers/helpers.c"
+
+- Quick sort:
+"gcc -fopenmp parallel_sorting/omp_quick_sort.c helpers/helpers.c"
