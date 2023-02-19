@@ -3,7 +3,7 @@
 #include<omp.h>
 #include "../helpers/helpers.h"
 
-int SIZE = 1000;
+int SIZE = 10;
 clock_t t;
 double cpu_time_used; 
 

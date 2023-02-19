@@ -1,0 +1,16 @@
+Count Sort:
+Serial count sort time = 0.000011 seconds.
+Parallel count sort time = 0.001554 seconds.
+======================================================
+Selection Sort:
+Serial selection sort time = 0.000011 seconds.
+Parallel selection sort time = 0.020545 seconds.
+======================================================
+Quick Sort:
+Serial quick sort time = 0.000011 seconds.
+Parallel quick sort time = 0.052026 seconds.
+======================================================
+Merge Sort:
+Serial merge sort time = 0.000018 seconds.
+Parallel merge sort time = 0.032777 seconds.
+======================================================

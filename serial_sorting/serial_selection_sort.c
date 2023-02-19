@@ -2,7 +2,7 @@
 #include<time.h>
 #include "../helpers/helpers.h"
 
-int SIZE = 1000;
+int SIZE = 10;
 
 void selection_sort(int arr[], int size);
 clock_t t;
