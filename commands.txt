@@ -8,6 +8,9 @@ Serial:
 - Quick sort:
 "gcc serial_sorting/serial_quick_sort.c helpers/helpers.c"
 
+- Merge sort:
+"gcc serial_sorting/serial_merge_sort.c helpers/helpers.c"
+
 =====================================================================
 Parallel:
 - count sort: 
@@ -18,3 +21,6 @@ Parallel:
 
 - Quick sort:
 "gcc -fopenmp parallel_sorting/omp_quick_sort.c helpers/helpers.c"
+
+- Merge sort:
+"gcc -fopenmp parallel_sorting/omp_merge_sort.c helpers/helpers.c"
